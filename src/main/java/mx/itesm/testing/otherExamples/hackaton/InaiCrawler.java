@@ -68,12 +68,13 @@ public class InaiCrawler {
             Thread.sleep(1000);
             FileWriter flwriter = null;
             try {
+                //aqui va ele path sel servidor en el que estara la aplicacion
                 flwriter = new FileWriter("D:\\UNI\\7 semestre\\Hack\\preguntas.txt");
                 BufferedWriter bfwriter = new BufferedWriter(flwriter);
 
                 numero = (int) (random() * 3);
                 bfwriter.write(pregunta[numero]+"\n");
-                
+
                 //cierra el buffer intermedio
                 bfwriter.close();
                 System.out.println("Archivo creado satisfactoriamente..");
